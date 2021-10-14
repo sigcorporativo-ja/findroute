@@ -1,0 +1,50 @@
+<div id="div-contenedor" class="m-control m-container m-findroute m-findroute-container">
+	<div class="m-findroute-container-inside">
+		<div class="addPoint-panel">Cálculo de rutas	
+		</div>
+		<div class="profile-panel">
+			<label>
+				<input type="radio" class="routeProfile" name="routeProfile" value="driving" checked>
+				<i class="fas fa-car icon-car profile-icon" title="Ruta en coche"></i>
+			</label>
+			<label>
+				<input type="radio" class="routeProfile" name="routeProfile" value="walking">
+				<i class="fas fa-walking icon-foot profile-icon" title="Ruta a pie"></i>
+			</label>
+			<label>
+				<input type="radio" class="routeProfile" name="routeProfile" value="cycling">
+				<i class="fas fa-bicycle icon-bike profile-icon" title="Ruta en bicicleta"></i>
+			</label>
+		</div>
+		<div class="search-panel">
+			<input autocomplete="off" type="text" id="m-findroute-search-input-1" class="m-input-search" title="Formato de búsqueda recomendado:&#10; Tipo Nombre Número, Municipio Provincia&#10; Ej: Calle Sierpes 1, Sevilla Sevilla&#10; (El municipio es obligatorio, la provincia recomendable)" placeholder="Origen"/>
+			<button type="button" id="m-findroute-search-btn-1" class="g-cartografia-zoom m-search-btn" title="Buscar"></button>
+			<button type="button" id="m-findroute-clear-btn-1" class="g-cartografia-cancelar m-clear-btn" title="Limpiar búsqueda"></button>
+			<button type="button" id="m-findroute-edit-btn-1" class="g-cartografia-bandera m-edit-btn" title="Añadir punto en el mapa"></button>
+		</div>
+		<!-- results panel -->
+		<div id="m-findroute-results-1" class="results-panel"></div>
+		<div class="search-panel last">
+			<input autocomplete="off" type="text" id="m-findroute-search-input-2" class="m-input-search" title="Formato de búsqueda recomendado:&#10; Tipo Nombre Número, Municipio Provincia&#10; Ej: Calle Sierpes 1, Sevilla Sevilla&#10; (El municipio es obligatorio, la provincia recomendable)" placeholder="Destino"/>
+			<button type="button" id="m-findroute-search-btn-2" class="g-cartografia-zoom m-search-btn" title="Buscar"></button>
+			<button type="button" id="m-findroute-clear-btn-2" class="g-cartografia-cancelar m-clear-btn" title="Limpiar búsqueda"></button>
+			<button type="button" id="m-findroute-edit-btn-2" class="g-cartografia-bandera m-edit-btn" title="Añadir punto en el mapa"></button>
+		</div>
+   		<!-- results panel -->
+   		<div id="m-findroute-results-2" class="results-panel"></div>
+  		<!-- route results panel -->
+	   	<div class="route-results-panel hidden" id="m-findroute-route-results-ppal">
+	   		<div id="m-findroute-route-results-ppal-title" class="result-route-title">Ruta principal</div>
+	   		<div id="rutaPpal" class="result-route"></div>	   		
+	   	</div>
+   		<div class="route-results-panel hidden" id="m-findroute-route-results-alt">
+   			<div id="m-findroute-route-results-alt-title" class="result-route-title">Ruta alternativa</div>
+   			<div id="rutaAlt" class="result-route hidden"></div>  		
+   		</div>
+	</div>
+	<div class="tools-panel">
+		<button id="limpiezaCompleta" class="g-cartografia-papelera" title="Limpiar resultados"></button>
+		<button id="addRoutePoint" class="g-cartografia-mas" title="Añadir nuevo punto a la ruta"></button>
+		<button id="deleteRoutePoint" class="g-cartografia-menos" title="Eliminar último punto de la ruta"></button>
+	</div>
+</div>

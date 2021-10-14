@@ -1,0 +1,19 @@
+{
+   "uuid_plugin": "17cb6315-d738-43ce-b80c-d57a1ba25c1f",
+   "uuid_version_plugin":"2ee53542-0bfc-4183-b467-ac5bfe8464bc",
+   "author": "", 
+   "date": "19/04/21", 
+   "description": "", 
+   "icon": "", 
+   "name": "PLG-RUTAS",
+   "org": "", 
+   "tags": "mapea,plugin", 
+   "text": "", 
+   "version_ficha_metadatos": "1.0.0",   
+   "buttons": [],
+   "dependencies":{ 
+      "modules":[],
+      "plugins":[],
+      "services":[]
+   }   
+}

@@ -1,0 +1,27 @@
+<div class="route-results-panel">
+   {{#if containtResult}}
+   <div class="results" id="m-findroute-results-scroll">
+      <span class="found" id="m-findroute-page-found">Distancia y tiempo total: {{routeDistance}}, {{routeTime}}</span>
+      <div class="result">
+         <table>
+            <tbody>
+               {{#each docs}}
+               <tr class="stepResult">
+                  <td class="instruction">{{instruction}}</td>
+                  <td class="distance">{{distance}}</td>
+                  <td class="geometry">{{geometry}}</td>
+               </tr>
+               {{/each}}
+            </tbody>
+         </table>
+      </div>
+   </div>
+   {{else}}
+   <div class="results">
+   <span class="partial">Sin resultados para la ruta.</span>
+   </div>
+   {{/if}}
+   <div class="page">
+      <div class="g-cartografia-flecha-arriba"></div>
+   </div>
+</div> 
